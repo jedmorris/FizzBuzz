@@ -7,6 +7,7 @@ function getMessage() {
 		'success!'
 	)
 }
+
 function getValues() {
 	alert("Hello Sloth");
 }
@@ -20,13 +21,14 @@ function getValues2() {
 
 	if (Number.isInteger(firstNumber) && Number.isInteger(secondNumber)) {
 
-		generateNumbers(firstNumber, secondNumber);
+		let number = generateNumbers(firstNumber, secondNumber);
+		displayNumbers(number);
 	} else {
 		Swal.fire({
 			icon: 'error',
 			title: 'Whoops...',
 			text: 'Only Integers are allowed for FizzBuzz.'
-		})
+		});
 	}
 }
 
