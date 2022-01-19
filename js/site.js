@@ -9,10 +9,6 @@ function getMessage() {
 }
 
 function getValues() {
-	alert("Hello Sloth");
-}
-
-function getValues2() {
 	let firstNumber = document.getElementById("firstNumber").value;
 	let secondNumber = document.getElementById("secondNumber").value;
 
