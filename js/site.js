@@ -39,6 +39,7 @@ function generateNumbers(fizzValue, buzzValue) {
 		isFizz = (i % fizzValue == 0);
 		isBuzz = (i % buzzValue == 0);
 
+		// replace mulliples of 3/5 with fizzbuzz/fizz/buzz
 		if (isFizz && isBuzz) {
 			returnArray.push("FizzBuzz");
 		} else if (isFizz) {
