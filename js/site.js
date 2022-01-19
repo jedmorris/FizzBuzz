@@ -28,13 +28,31 @@ function getValues() {
 	}
 }
 
-function generateNumbers(firstNumber, secondNumber) {
-	let numbers = [];
-	for (let i = firstNumber; i < secondNumber; i++) {
-		numbers.push(i);
+function generateNumbers(fizzValue, buzzValue) {
+	let returnArray = [];
+	let isFizz = false;
+	let isBuzz = false;
+
+	for (let i = 0; i < 100; i++) {
+		
+		// check if fizzValue && buzzValue are fizz/buzz
+		isFizz = (i % fizzValue == 0);
+		isBuzz = (i % buzzValue == 0);
+
+		if (isFizz && isBuzz) {
+			returnArray.push("FizzBuzz");
+		} else if (isFizz) {
+			returnArray.push("Fizz");
+		} else if (isBuzz) {
+			returnArray.push("Buzz");
+		} else {
+			returnArray.push(i);
+		}
 	}
-	return numbers;
+
+	return returnArray;
 }
+
 
 function displayNumbers(numbers) {
 	let templateRows = "";
