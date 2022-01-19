@@ -33,7 +33,7 @@ function generateNumbers(fizzValue, buzzValue) {
 	let isFizz = false;
 	let isBuzz = false;
 
-	for (let i = 0; i < 100; i++) {
+	for (let i = 0; i <= 100; i++) {
 		
 		// check if fizzValue && buzzValue are fizz/buzz
 		isFizz = (i % fizzValue == 0);
